@@ -1,7 +1,7 @@
 let info = {
-  name: "Hrishikesh Paul",
-  logo_name: "paul",
-  flat_picture: require("./src/assets/potrait.jpg"),
+  name: "Benjamin Oldén",
+  logo_name: "benjamin",
+  flat_picture: require("./src/assets/portrait.jpg"),
   config: {
     use_cookies: true,
     navbar: {
@@ -9,13 +9,13 @@ let info = {
     }
   },
   description:
-    "A second year Computer Science graduate student at Indiana University Bloomington with an interest in Software Development, UX Design and Artificial Intelligence - and seeking exciting opportunities related to the same.<br><br>I am a detail oriented person and I keep my goals and tasks organized to maintain productivity. I would bring to table a wide range of software skills, ranging from design and development to writing scripts for intelligent agents. I believe that the skills that I have attained from the dynamic environment and competitive university life define me, and I am looking forward to implementing and polishing them in any opportunity that I receive. ",
+    "Welcome 👋 I'm a Full Stack Software Developer at Lund College Of Technology 👻 based out of Lund, Sweden. I am working as a Full Stack Software Developer for 5 years. I have a love of anything related to programming and have been associated with computers since a very young age. <br><br> I have also a blog with 30k readers / month. Where I provide helpful advice and tutorials for aspiring and established programmers.",
   links: {
     linkedin: "https://www.linkedin.com/in/hrishikeshpaul/",
     github: "https://github.com/hrishikeshpaul",
-    angellist: "https://angel.co/u/hrishikesh-paul",
     resume:
-      "https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf"
+      "https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf",
+    blog: 'https://beginnersoftwaredeveloper.com/'
   },
   education: [
     {

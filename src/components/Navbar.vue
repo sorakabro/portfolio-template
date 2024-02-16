@@ -70,13 +70,13 @@
             </li>
             <li class="nav-item ml-2">
               <a
+              :class="{ 'night-mode-icon-hover-dark': !nightMode, 'text-light night-mode-icon-hover-light': nightMode }"
                 class="nav-link"
                 href="#"
                 @click.prevent="switchMode"
-                :class="{ 'text-light': nightMode }"
                 ><i
                   :class="{
-                    'fas fa-moon': nightMode,
+                    'fas fa-sun': nightMode,
                     'far fa-moon': !nightMode,
                   }"
                   v-tooltip.bottom="nightMode ? 'Light Mode' : 'Night Mode'"
@@ -142,5 +142,29 @@ nav {
 .navbar-blur {
   background-color: #ffffff7e;
   backdrop-filter: blur(12px);
+}
+
+.night-mode-icon-hover-dark:focus{
+  border-color: #669db3ff;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.night-mode-icon-hover-dark i:hover {
+  color: #f9383b;
+}
+
+.night-mode-icon-hover-light:focus{
+  border-color: #669db3ff;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.night-mode-icon-hover-light i:hover {
+  color: #f9383b;
+}
+
+i {
+  font-size: 20px;
 }
 </style>

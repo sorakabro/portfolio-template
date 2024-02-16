@@ -10,48 +10,59 @@
       data-aos-duration="1000"
     >
       <div class="row align-items-center">
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
-          <img :src="picture" />
-        </div>
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5">
-          <span
-            class="home-title"
+        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5 text-center">
+          <h2
             :class="{ pgray: !nightMode, 'text-light': nightMode }"
-            >hello there!</span
+            >Hello, I'm Benjamin Oldén.</h2
           >
           <div>
             <p v-html="description"></p>
           </div>
-          <div class="text-center pb-4">
+          <p>I'm currently working with,</p>
+          <ul class="col-12" style="text-align: left;" :class="{ pgray: !nightMode, 'text-light': nightMode }">
+            <li>Vue.js</li>
+            <li>NodeJS</li>
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>SQL</li>
+          </ul>
+          <div class="pb-4">
             <button
-              class="btn btn-outline-secondary mx-2 "
+                type="button"
+                class="btn btn-danger mr-2 float-left"
+                @click="open('resume')"
+                v-tooltip.bottom="'Resume'"
+              >
+              Resume
+            </button>
+            <button
+              :class="{ 'btn btn-outline-secondary-dark mx-2': !nightMode, 'btn btn-outline-secondary-light mx-2': nightMode }"
+              class="float-left"
               @click="open('linkedin')"
               v-tooltip.bottom="'LinkedIn'"
             >
               <i class="fab fa-linkedin"></i>
             </button>
             <button
-              class="btn btn-outline-secondary mx-2"
+               :class="{ 'btn btn-outline-secondary-dark mx-2': !nightMode, 'btn btn-outline-secondary-light mx-2': nightMode }"
+               class="float-left"
               @click="open('github')"
               v-tooltip.bottom="'GitHub'"
             >
               <i class="fab fa-github"></i>
             </button>
             <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('angellist')"
-              v-tooltip.bottom="'AngelList'"
+               :class="{ 'btn btn-outline-secondary-dark mx-2': !nightMode, 'btn btn-outline-secondary-light mx-2': nightMode }"
+               class="float-left"
+              @click="open('blog')"
+              v-tooltip.bottom="'Blog'"
             >
-              <i class="fab fa-angellist"></i>
-            </button>
-            <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('resume')"
-              v-tooltip.bottom="'Resume'"
-            >
-              <i class="fa fa-file"></i>
+              <i class="fas fa-globe-americas"></i>
             </button>
           </div>
+        </div>
+        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
+            <img :src="picture" id="benjaminLogo" class="rounded-top" />
         </div>
       </div>
     </div>
@@ -80,8 +91,8 @@ export default {
       name: info.name,
       linkedin: info.links.linkedin,
       github: info.links.github,
-      angellist: info.links.angellist,
-      resume: info.links.resume
+      resume: info.links.resume,
+      blog: info.links.blog
     };
   },
   methods: {
@@ -93,11 +104,11 @@ export default {
         case "github":
           window.open(this.github, "_blank");
           break;
-        case "angellist":
-          window.open(this.angellist, "_blank");
-          break;
         case "resume":
           window.open(this.resume, "_blank");
+          break;
+          case "blog":
+          window.open(this.blog, "_blank");
           break;
       }
     },
@@ -106,11 +117,6 @@ export default {
 </script>
 
 <style scoped>
-.home-title {
-  font-size: 28px;
-  font-weight: 500;
-}
-
 img {
   max-width: 300px;
   margin-top: 60px;
@@ -133,30 +139,46 @@ img {
   font-size: 15px;
 }
 
-.btn {
-  border-color: #669db3ff;
-  color: #669db3ff;
+.btn-outline-secondary-light {
+  color: #fff;
+  border-color: none;
 }
 
-.btn:hover {
-  background-color: #669db3ff;
-  border-color: #669db3ff;
-  color: white;
+.btn-outline-secondary-light:hover {
+  border-color: none;
+  color: #f9383b;
 }
 
-.btn:focus {
-  background-color: #669db3ff;
-  border-color: #669db3ff;
-  color: white;
+.btn-outline-secondary-light:focus {
+  border-color: none;
+  color: #f9383b;
 }
 
-.btn:focus {
-  outline: none !important;
+.btn-outline-secondary-dark {
+  color: black;
+  border-color: none;
+}
+
+.btn-outline-secondary-dark:hover {
+  border-color: none;
+  color: #f9383b;
+}
+
+.btn-outline-secondary-dark:focus {
+  border-color: none;
+  color: #f9383b;
 }
 
 p {
   text-align: justify;
-  font-weight: 400;
+}
+
+#benjaminLogo {
+  transform: scaleX(1);
+}
+
+i {
+  font-size:30px;
 }
 
 /* LEAVES */
