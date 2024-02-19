@@ -32,40 +32,31 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-2">
-              <a
-                class="nav-link"
-                href="/about"
-                @click.prevent="$emit('scroll', 'about')"
-                :class="{ 'text-light': nightMode }"
-                >about</a
-              >
-            </li>
-            <li class="nav-item mx-2">
-              <a
-                class="nav-link"
-                href="/skills"
-                @click.prevent="$emit('scroll', 'skills')"
-                :class="{ 'text-light': nightMode }"
-                >skills</a
-              >
-            </li>
             <li class="nav-item mx-2 ">
               <a
                 class="nav-link"
                 href="/portfolio"
                 @click.prevent="$emit('scroll', 'portfolio')"
-                :class="{ 'text-light': nightMode }"
-                >portfolio</a
+                :class="{ 'nav-link-black-hover': !nightMode, 'text-light nav-link-white-hover': nightMode }"
+                >Work</a
               >
             </li>
             <li class="nav-item mx-2">
               <a
                 class="nav-link"
-                href="/contact"
-                @click.prevent="$emit('scroll', 'contact')"
-                :class="{ 'text-light': nightMode }"
-                >contact</a
+                href="/about"
+                @click.prevent="$emit('scroll', 'about')"
+                :class="{ 'nav-link-black-hover': !nightMode, 'text-light nav-link-white-hover': nightMode }"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link nav-link-red"
+                style="color: red;"
+                href="https://github.com/sorakabro/portfolio-template/blob/main/src/assets/pdfs/Resume.pdf"
+                target="_blank"
+                >Resume</a
               >
             </li>
             <li class="nav-item ml-2">
@@ -122,6 +113,18 @@ export default {
 <style scoped>
 .nav-link {
   font-weight: 500;
+}
+
+.nav-link-white-hover:hover {
+  text-decoration: underline #fff;
+}
+
+.nav-link-black-hover:hover {
+  text-decoration: underline black;
+}
+
+.nav-link-red:hover {
+  text-decoration: underline red !important;
 }
 
 button {

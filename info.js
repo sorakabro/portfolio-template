@@ -14,7 +14,7 @@ let info = {
     linkedin: "https://www.linkedin.com/in/hrishikeshpaul/",
     github: "https://github.com/hrishikeshpaul",
     resume:
-      "https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf",
+      "https://github.com/sorakabro/portfolio-template/blob/main/src/assets/pdfs/Resume.pdf",
     blog: 'https://beginnersoftwaredeveloper.com/'
   },
   education: [

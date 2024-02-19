@@ -79,6 +79,11 @@ export default {
 </script>
 
 <style>
+
+body, a, i, button{
+  cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="32" width="32"><text y="28" font-size="28">🍕</text><path d="M0,0 L0,0 L0,0" /></svg>'), auto !important; 
+}
+
 #app {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -249,4 +254,5 @@ export default {
   opacity: 1;
   transition: opacity 0.5s;
 }
+
 </style>
