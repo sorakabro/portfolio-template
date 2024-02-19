@@ -59,6 +59,14 @@
             >
               <i class="fas fa-globe-americas"></i>
             </button>
+            <button
+               :class="{ 'btn btn-outline-secondary-dark mx-2': !nightMode, 'btn btn-outline-secondary-light mx-2': nightMode }"
+               class="float-left"
+              @click="open('mail')"
+              v-tooltip.bottom="'Mail'"
+            >
+            <i class="fas fa-envelope"></i>
+            </button>
           </div>
         </div>
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
@@ -92,11 +100,13 @@ export default {
       linkedin: info.links.linkedin,
       github: info.links.github,
       resume: info.links.resume,
-      blog: info.links.blog
+      blog: info.links.blog,
+      mail: info.links.mail
     };
   },
   methods: {
     open(link) {
+      console.log(link)
       switch (link) {
         case "linkedin":
           window.open(this.linkedin, "_blank");
@@ -107,8 +117,11 @@ export default {
         case "resume":
           window.open(this.resume, "_blank");
           break;
-          case "blog":
+        case "blog":
           window.open(this.blog, "_blank");
+          break;
+        case "mail":
+          window.open(this.mail, "_blank");
           break;
       }
     },

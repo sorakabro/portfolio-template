@@ -61,10 +61,11 @@
               class="mt-1 mb-3"
               :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
             />
-            <button class="btn w-25 mr-3" @click="open(portfolio.github)">
+            <button class="btn btn-github w-25 mr-3" @click="open(portfolio.github)">
+              <i class="fab fa-github"></i>
               github
             </button>
-            <button class="btn w-25" @click="$emit('close')">close</button>
+            <button class="btn btn-danger w-25" @click="$emit('close')">close</button>
           </div>
         </div>
       </div>
@@ -225,18 +226,18 @@ a:hover {
   box-shadow: 2px 2px 5px rgb(179, 179, 179);
 }
 
-.btn {
+.btn-github {
   border-color: #669db3ff;
   color: #669db3ff;
 }
 
-.btn:hover {
+.btn-github:hover {
   background-color: #669db3ff;
   border-color: #669db3ff;
   color: white;
 }
 
-.btn:focus {
+.btn-github:focus {
   background-color: #669db3ff;
   border-color: #669db3ff;
   color: white;

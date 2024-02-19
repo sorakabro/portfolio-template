@@ -17,8 +17,22 @@
         <span
           class="title text-center"
           :class="{ pgray: !nightMode, 'text-light': nightMode }"
-          >about me.</span
+          >About me</span
         >
+        <div class="row align-items-center">
+        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5 text-center">
+          <h2
+            :class="{ pgray: !nightMode, 'text-light': nightMode }"
+            >Hello, I'm Benjamin Oldén.</h2
+          >
+          <div>
+            <p v-html="description"></p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
+            <img :src="picture" id="benjaminLogo" class="rounded-top" />
+        </div>
+      </div>
       </div>
       <hr
         width="50%"
@@ -52,14 +66,16 @@ export default {
   },
   data() {
     return {
+      description: info.description,
       education: {
-        title: "education",
+        title: "Education",
         data: info.education,
       },
       experience: {
-        title: "experiences",
+        title: "Experiences",
         data: info.experience,
       },
+      picture: info.flat_picture,
     };
   },
 };
@@ -69,5 +85,28 @@ export default {
 .title {
   font-size: 30px;
   font-weight: 500;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 300px;
+  margin-top: 60px;
+  transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 580px) {
+  img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(205, 205, 205);
+  }
+}
+
+#benjaminLogo {
+  transform: scaleX(1);
 }
 </style>

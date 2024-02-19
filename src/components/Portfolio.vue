@@ -17,7 +17,7 @@
         <span
           class="title text-center"
           :class="{ pgray: !nightMode, 'text-light': nightMode }"
-          >portfolio.</span
+          >FEATURED PROJECTS</span
         >
       </div>
       <hr
@@ -26,7 +26,7 @@
       />
 
       <vue-tabs :activeTextColor="!nightMode ? '#535A5E' : '#dfdfdf'">
-        <v-tab title="development">
+        <v-tab title="Development">
           <br />
           <div class="row">
             <div
@@ -50,11 +50,11 @@
             </div>
           </div>
           <div class="text-center py-3" v-if="showBtn !== 'show less'">
-            <button class="btn" @click.prevent="showMore">{{ showBtn }}</button>
+            <button class="btn btn-danger" @click.prevent="showMore">{{ showBtn }}</button>
           </div>
         </v-tab>
 
-        <v-tab title="design">
+        <!--<v-tab title="design">
           <div class="row">
             <div
               v-for="(design, idx) in desgin_info"
@@ -106,7 +106,7 @@
             </div>
           </div>
           <br />
-        </v-tab>
+        </v-tab> -->
       </vue-tabs>
     </div>
     <transition name="modal">
@@ -274,23 +274,6 @@ export default {
   transform: scale(1.1);
 }
 
-.btn {
-  border-color: rgb(212, 149, 97);
-  color: rgb(212, 149, 97);
-}
-
-.btn:hover {
-  background-color: rgb(212, 149, 97);
-  border-color: rgb(212, 149, 97);
-  color: white;
-}
-
-.btn:focus {
-  background-color: rgb(212, 149, 97);
-  border-color: rgb(212, 149, 97);
-  color: white;
-}
-
 /deep/ .vue-tabs .nav-tabs {
   border: none;
   font-size: 20px;
@@ -381,22 +364,6 @@ export default {
   border-radius: 10px !important;
 }
 
-.btn {
-  border-color: #669db3ff;
-  color: #669db3ff;
-}
-
-.btn:hover {
-  background-color: #669db3ff;
-  border-color: #669db3ff;
-  color: white;
-}
-
-.btn:focus {
-  background-color: #669db3ff;
-  border-color: #669db3ff;
-  color: white;
-}
 /deep/ .vueperslides__arrow {
   outline: none !important;
   border: none;

@@ -39,19 +39,21 @@
         </div>
         <div class="text-center mt-2">
           <button
-            href=""
-            class="btn-sm btn btn-outline-secondary no-outline"
-            @click.prevent="showModal"
-          >
-            read more
-          </button>
-          <button
             href="#"
-            class="btn-sm btn btn-outline-secondary no-outline ml-4"
+            class="btn-sm btn btn-danger mr-4"
             v-if="portfolio.visit"
             @click.prevent="open(portfolio.visit)"
           >
-            visit website
+          <i class="fas fa-link"></i>
+            Live Demo
+          </button>
+          <button
+            href=""
+            class="btn-sm btn btn-github btn-outline-secondary no-outline"
+            @click.prevent="showModal"
+          >
+          <i class="fab fa-github"></i>
+            Read more
           </button>
         </div>
       </div>
@@ -183,18 +185,18 @@ div.img-div {
   font-size: 13px;
 }
 
-.btn {
+.btn-github {
   border-color: #669db3ff;
   color: #669db3ff;
 }
 
-.btn:hover {
+.btn-github:hover {
   background-color: #669db3ff;
   border-color: #669db3ff;
   color: white;
 }
 
-.btn:focus {
+.btn-github:focus {
   background-color: #669db3ff;
   border-color: #669db3ff;
   color: white;
