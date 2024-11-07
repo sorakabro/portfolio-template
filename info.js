@@ -5,18 +5,17 @@ let info = {
   config: {
     use_cookies: true,
     navbar: {
-      blur: false
-    }
+      blur: false,
+    },
   },
   description:
-    "Welcome 👋 I'm a Full Stack Software Developer at Lund College Of Technology 👻 based out of Lund, Sweden. I am working as a Full Stack Software Developer for 5 years. I have a love of anything related to programming and have been associated with computers since a very young age. <br><br> I have also a blog with 30k readers / month. Where I provide helpful advice and tutorials for aspiring and established programmers.",
+    "Welcome 👋 I'm a Full Stack Software Developer at BTJ 👻 based out of Lund, Sweden. I am working as a Full Stack Software Developer for over 5 years. I have a love of anything related to programming and have been associated with computers since a very young age.",
   links: {
     linkedin: "https://www.linkedin.com/in/benjamin-old%C3%A9n-789435172/",
     github: "https://github.com/sorakabro",
     resume:
       "https://github.com/sorakabro/portfolio-template/blob/main/src/assets/pdfs/Resume.pdf",
-    blog: 'https://beginnersoftwaredeveloper.com/',
-    mail: 'mailto:berntsson90@hotmail.com'
+    mail: "mailto:contact@benjaminolden.com",
   },
   education: [
     {
@@ -24,8 +23,7 @@ let info = {
       place: "Sweden",
       date: "2018 - 2019",
       degree: "Computer Science",
-      description:
-        "Computer science courses",
+      description: "Computer science courses",
       skills: [
         "PHP",
         "Html",
@@ -33,48 +31,52 @@ let info = {
         "JavaScript",
         "Linux",
         "Planning project",
-        "Database Structure"
-      ]
+        "Database Structure",
+      ],
     },
     {
       name: "Högskolan Dalarna",
       place: "Sweden",
       date: "2019 - 2020",
       degree: "Computer Science",
-      description:
-        "Computer science courses",
-      skills: [
-        "C#",
-        "Java",
-        "Software Engineering",
-        "Network Engineering"
-      ]
+      description: "Computer science courses",
+      skills: ["C#", "Java", "Software Engineering", "Network Engineering"],
     },
     {
       name: "Medieinstitutet Malmö",
       place: "Sweden",
       date: "2020 - 2021",
       degree: "Website development",
-      description:
-        "Website development courses",
-      skills: [
-        "Php",
-        "Wordpress",
-        "Html",
-        "Css",
-        "Javascript"
-      ]
-    }
+      description: "Website development courses",
+      skills: ["Php", "Wordpress", "Html", "Css", "Javascript"],
+    },
   ],
   experience: [
     {
-      name: "Lund College Of Technology",
+      name: "BTJ",
       place: "Lund",
-      date: "2022 - Present",
+      date: "2024 - Present",
       position: "Full Stack Developer",
       description:
-        "I work as a Software Developer where I mainly work with developing internal systems that are used both by teachers and students who attend LTH. I have mainly worked on developing a completely new program planning program which is used, among other things, to be able to plan which programs and courses LTH will offer its students for each new academic year.",
-      skills: ["Vue.js", "Node.js", "OpenAPI", "Knex.js", "SQL"]
+        "At BTJ, I work as a Software Developer and have mainly worked with the development of customer applications. My main project has been to develop a new application that helps teachers to more easily find suitable books for different grades and themes, which facilitates their work with literature selection at school. I have also worked on an application that enables our customers to easily order new cataloging of books. In addition, I have participated in the new development of an older internal system to introduce new functions and streamline and automate workflows for our users.",
+      skills: [
+        "React.js (TS)",
+        ".Net",
+        "Node.js",
+        "Azure",
+        "TDD",
+        "DDD",
+        "SQL",
+      ],
+    },
+    {
+      name: "Lund College Of Technology",
+      place: "Lund",
+      date: "2022 - 2024",
+      position: "Full Stack Developer",
+      description:
+        "I worked as a Software Developer where I mainly work with developing internal systems that are used both by teachers and students who attend LTH. I have mainly worked on developing a completely new program planning program which is used, among other things, to be able to plan which programs and courses LTH will offer its students for each new academic year.",
+      skills: ["Vue.js", "Node.js", "OpenAPI", "Knex.js", "SQL"],
     },
     {
       name: "Exakta Software",
@@ -83,7 +85,7 @@ let info = {
       position: "Full Stack Developer",
       description:
         "At Exakta software, I have worked as a Software Developer with the company's self-developed business system/e-store with SaaS.",
-      skills: ["Vue.js", "PHP", "Laravel", "SQL"]
+      skills: ["Vue.js", "PHP", "Laravel", "SQL"],
     },
     {
       name: "Head Of Search",
@@ -92,110 +94,134 @@ let info = {
       position: "Full Stack Developer",
       description:
         "Worked as a web developer at a web agency mainly with Wordpress as cms. Backend development of e-commerce solutions built in php, javascript and wordpress.",
-      skills: ["Wordpress", "Woocommerce", "PHP", "Javascript", "SQL"]
-    }
+      skills: ["Wordpress", "Woocommerce", "PHP", "Javascript", "SQL"],
+    },
   ],
   skills: [
     {
-      title: "languages",
+      title: "Programming",
       info: [
-        "PHP",
-        "Javascript",
         "TypeScript",
+        "Javascript",
+        "C#/.Net",
         "SQL",
         "NoSQL",
-        "Laravel"
+        "Shell",
+        "PHP",
       ],
-      icon: "fa fa-code"
+      icon: "fa fa-code",
     },
     {
-      title: "web technologies",
-      info: ["Vue", "React", "Node", "Tailwind", "HTML", "CSS"],
-      icon: "fas fa-laptop-code"
+      title: "Web",
+      info: [
+        "React",
+        "Vue",
+        "NodeJS",
+        "Redux",
+        "Tailwind",
+        "HTML/CSS",
+        "OAuth",
+        "i18n",
+      ],
+      icon: "fas fa-laptop-code",
     },
     {
-      title: "databases",
-      info: ["MongoDB", "MySQL"],
-      icon: "fa fa-database"
+      title: "Databases",
+      info: ["MongoDB", "Redis", "MySQL", "Firebase"],
+      icon: "fa fa-database",
     },
     {
-      title: "operating systems & tools",
+      title: "OS & Tools",
       info: [
         "MacOS",
         "Ubuntu",
         "Windows",
-        "Agile",
-        "Scrum",
-        "JIRA",
+        "Git",
+        "Agile(Scrum)",
+        "Tdd",
+        "Ddd",
+        "Jira",
         "Heroku",
-        "Firebase",
         "AWS S3",
-        "Azure"
+        "Azure",
       ],
-      icon: "fas fa-tools"
+      icon: "fas fa-tools",
     },
     {
-      title: "design",
-      info: ["Photoshop"],
-      icon: "fa fa-pencil-square-o"
-    }
+      title: "Design & Research",
+      info: ["Interviews", "User Research", "Design strategy", "Photoshop"],
+      icon: "fa fa-pencil-square-o",
+    },
   ],
   portfolio: [
+    {
+      name: "Sass AI Content Generator",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/ai-content-generator-portfolio-img.png"),
+        },
+      ],
+      technologies: [
+        "React.js (TS)",
+        "Node.js (TS)",
+        "MongoDB",
+        "Openai",
+        "Stripe",
+      ],
+      category: "Website Development",
+      date: "2024",
+      github: "https://github.com/sorakabro/serp-ranker-frontend",
+      visit: "https://serp-ranker-frontend.onrender.com/",
+      description:
+        "Sass inspired ai content generator application, done with React.js, Node.js and Openai with stripe integration.",
+    },
     {
       name: "Ecommerce Website",
       pictures: [
         {
-          img: require("./src/assets/portfolio/web_app_MVC.png")
-        }
+          img: require("./src/assets/portfolio/web_app_MVC.png"),
+        },
       ],
       technologies: ["C#", ".Net Core", "MVC", "Stripe", "Azure"],
       category: "Website Development",
       date: "2024",
-      github:
-        "https://github.com/sorakabro/Bulky_MVC",
-      visit: "https://bookappmvc.azurewebsites.net/",
+      github: "https://github.com/sorakabro/Bulky_MVC",
+      visit:
+        "https://bookapp-arh4cchwbab3fsf0.canadacentral-01.azurewebsites.net/",
       description:
-        "Ecommerce inspired application, done with .Net Core MVC with stripe integration."
+        "Ecommerce inspired application, done with .Net Core MVC with stripe integration.",
     },
     {
       name: "Amazon inspired website",
       pictures: [
         {
-          img: require("./src/assets/portfolio/amazon-portfolio-img.png")
-        }
+          img: require("./src/assets/portfolio/amazon-portfolio-img.png"),
+        },
       ],
       technologies: ["React", "HTML", "CSS"],
       category: "Website",
       date: "2020",
       github: "https://github.com/sorakabro/Amazon-clone-with-react",
       visit: "https://benjaminolden.com/build/",
-      description:
-        "Amazon inspired website, done with react"
+      description: "Amazon inspired website, done with react",
     },
     {
       name: "Spotify Clone",
       pictures: [
         {
-          img: require("./src/assets/portfolio/spotifyclone_project.jpg")
-        }
+          img: require("./src/assets/portfolio/spotifyclone_project.jpg"),
+        },
       ],
-      technologies: [
-        "PHP",
-        "Javascript",
-        "Html",
-        "Css",
-        "Sql"
-      ],
+      technologies: ["PHP", "Javascript", "Html", "Css", "Sql"],
       category: "Website",
       github: "https://github.com/sorakabro/Spotify-Clone",
       date: "2020",
       visit: "https://benjaminolden.com/Spotify-Clone/register.php",
-      description:
-        "Spotify Clone done with php,javascript, sql"
-    }
+      description: "Spotify Clone done with php,javascript, sql",
+    },
   ],
   portfolio_design: [
-   /* {
+    /* {
       name: "Guituna",
       title: "Guituna - Mockup Design",
       pictures: [
@@ -294,7 +320,7 @@ let info = {
       author: "Ushanas Shastri",
       position: "CTO",
       company: "Viteos Capital Market Services",
-      location: "Mumbai"
+      location: "Mumbai",
     },
     {
       title:
@@ -302,7 +328,7 @@ let info = {
       author: "Anil Dukkipatty",
       position: "CTO",
       company: "Elemential Labs",
-      location: "Mumbai"
+      location: "Mumbai",
     },
     {
       title:
@@ -310,7 +336,7 @@ let info = {
       author: "Chintan Shah",
       position: "Director",
       company: "Hridayam Soft Solution",
-      location: "Mumbai"
+      location: "Mumbai",
     },
     {
       title:
@@ -318,9 +344,9 @@ let info = {
       author: "Mrinal Pai",
       position: "Co-Founder & Director",
       company: "Skylark Drones",
-      location: "Bangalore"
-    }
-  ]
+      location: "Bangalore",
+    },
+  ],
 };
 
 export default info;

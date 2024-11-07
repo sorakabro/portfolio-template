@@ -20,10 +20,10 @@
           </div>
           <p>I'm currently working with,</p>
           <ul class="col-12" style="text-align: left;" :class="{ pgray: !nightMode, 'text-light': nightMode }">
-            <li>Vue.js</li>
-            <li>NodeJS</li>
-            <li>PHP</li>
-            <li>Laravel</li>
+            <li>React.js (TS)</li>
+            <li>.Net</li>
+            <li>Node.js</li>
+            <li>Azure</li>
             <li>SQL</li>
           </ul>
           <div class="pb-4">
@@ -51,14 +51,14 @@
             >
               <i class="fab fa-github"></i>
             </button>
-            <button
+           <!-- <button
                :class="{ 'btn btn-outline-secondary-dark mx-2': !nightMode, 'btn btn-outline-secondary-light mx-2': nightMode }"
                class="float-left"
               @click="open('blog')"
               v-tooltip.bottom="'Blog'"
             >
               <i class="fas fa-globe-americas"></i>
-            </button>
+            </button>-->
             <button
                :class="{ 'btn btn-outline-secondary-dark mx-2': !nightMode, 'btn btn-outline-secondary-light mx-2': nightMode }"
                class="float-left"
@@ -106,7 +106,6 @@ export default {
   },
   methods: {
     open(link) {
-      console.log(link)
       switch (link) {
         case "linkedin":
           window.open(this.linkedin, "_blank");
@@ -117,9 +116,9 @@ export default {
         case "resume":
           window.open(this.resume, "_blank");
           break;
-        case "blog":
+        /*case "blog":
           window.open(this.blog, "_blank");
-          break;
+          break; */
         case "mail":
           window.open(this.mail, "_blank");
           break;
