@@ -21,8 +21,8 @@
           <p>I'm currently working with,</p>
           <ul class="col-12" style="text-align: left;" :class="{ pgray: !nightMode, 'text-light': nightMode }">
             <li>React.js (TS)</li>
-            <li>.Net</li>
             <li>Node.js</li>
+            <li>.Net</li>
             <li>Azure</li>
             <li>SQL</li>
           </ul>
